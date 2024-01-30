@@ -59,14 +59,14 @@ function generateName() {
       } else {
         name += randomVowel();
       }
-    } else {
-      if (i % 2 === 0) {
+    } else if (pattern === 1) {
+			 if (i % 2 === 0) {
         name += randomVowel();
       } else {
         name += randomConsonant();
       }
+    } else {
     }
-  }
   name = name.charAt(0).toUpperCase() + name.slice(1);
   return name;
 }
