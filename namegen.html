@@ -60,11 +60,13 @@ function generateName() {
         name += randomVowel();
       }
     } else {
-	if (i % 2 === 0) {
+      if (i % 2 === 0) {
         name += randomVowel();
       } else {
         name += randomConsonant();
-      };
+      }
+    }
+  }
   name = name.charAt(0).toUpperCase() + name.slice(1);
   return name;
 }
@@ -97,14 +99,12 @@ button.addEventListener("click", function() {
   var thread_uri = window.location.href;
   var thread_title = window.document.title;
   var thread_fragment = window.location.hash;
-
   // rb owner was here.
   var rb_src = "https://my.remarkbox.com/embed" + 
       "?rb_owner_key=" + rb_owner_key +
       "&thread_title=" + encodeURI(thread_title) +
       "&thread_uri=" + encodeURIComponent(thread_uri) + 
       thread_fragment;
-
   function create_remarkbox_iframe() {
     var ifrm = document.createElement("iframe");
     ifrm.setAttribute("id", "remarkbox-iframe");
