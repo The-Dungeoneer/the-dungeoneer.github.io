@@ -77,7 +77,7 @@ function randomTitle() {
 function generateFullName() {
   let name = generateName();
   let title = randomTitle();
-  return `${name} The ${title}`;
+  return `${name} the ${title}`;
 }
 let button = document.getElementById("generate");
 let paragraph = document.getElementById("name");
@@ -86,6 +86,7 @@ button.addEventListener("click", function() {
   paragraph.textContent = fullName;
 });
 </script>
+<h2>Share Your Favorite Names Below!</h2>
 <!-- Remarkbox - Your readers want to communicate with you -->
 <div id="remarkbox-div">
   <noscript>
