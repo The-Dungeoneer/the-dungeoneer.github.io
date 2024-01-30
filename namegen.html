@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<title>Fantasy Name Generator</title>
+<!-- Add a viewport meta tag to make the page responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Use a grid layout for the body to center the content -->
+<style>
+body {
+  background-color: lightblue;
+  display: grid;
+  place-items: center;
+}
+h1, p {
+  font-family: Arial;
+}
+h1 {
+  color: darkblue;
+}
+p {
+  color: darkred;
+}
+#name {
+  font-size: 36px;
+}
+#generate {
+  margin: 10px;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<h1>Fantasy Name Generator</h1>
+<p>Click the button below to generate a random fantasy name.</p>
+<button id="generate">Generate</button>
+<p id="name"></p>
+<script>
+const vowels = ["a", "e", "i", "o", "u", "y"];
+const consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"];
+function randomInt(n) {
+  return Math.floor(Math.random() * n);
+}
+function randomVowel() {
+  return vowels[randomInt(vowels.length)];
+}
+function randomConsonant() {
+  return consonants[randomInt(consonants.length)];
+}
+function generateName() {
+  let name = "";
+  let length = randomInt(8) + 3;
+  let pattern = randomInt(2);
+  for (let i = 0; i < length; i++) {
+    if (pattern === 0) {
+      if (i % 2 === 0) {
+        name += randomConsonant();
+      } else {
+        name += randomVowel();
+      }
+    } else {
+      if (i % 2 === 0) {
+        name += randomVowel();
+      } else {
+        name += randomConsonant();
+      }
+    }
+  }
+  name = name.charAt(0).toUpperCase() + name.slice(1);
+  return name;
+}
+const titles = ["Unending", "Cowardly", "Strong", "Brave", "Fierce", "Clever", "Wicked", "Mighty", "Savage", "Cunning", "Merciless", "Infernal", "Glorious", "Vengeful", "Ruthless", "Eternal", "Furious", "Dreadful", "Divine", "Legendary"];
+function randomTitle() {
+  return titles[randomInt(titles.length)];
+}
+function generateFullName() {
+  let name = generateName();
+  let title = randomTitle();
+  return `${name} The ${title}`;
+}
+let button = document.getElementById("generate");
+let paragraph = document.getElementById("name");
+button.addEventListener("click", function() {
+  let fullName = generateFullName();
+  paragraph.textContent = fullName;
+});
+</script>
+</body>
+</html>
