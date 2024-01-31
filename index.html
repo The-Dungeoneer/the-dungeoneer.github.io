@@ -56,7 +56,9 @@
 			<button id="continue">Continue!</button>
 		</div>
 		<script>
-			
+			const button = document.getElementById("continue");
+			var wip = document.getElementById("wip");
+			button.addEventListener("click", ()=>{wip.style.display = "none"});
 		</script>
 	</body>
 </html>
