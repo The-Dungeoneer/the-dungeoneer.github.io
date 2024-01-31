@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<title>Fantasy Name Generator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  background-color: #0fd173;
+  display: grid;
+  place-items: center;
+}
+h1, p {
+  font-family: Arial;
+}
+h1 {
+  color: #1a1a1f;
+}
+p {
+  color: darkred;
+}
+#name {
+  font-size: 36px;
+}
+#generate {
+  margin: 10px;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<a href="/"><img src="/logo.png"></a>
+<h1>Fantasy Name Generator</h1>
+<p>Click the button below to generate a random fantasy name.</p>
+<button id="generate">Generate</button>
+<p id="name"></p>
+<script>
+const detail1 = ["Rescue","Find","Destry","Infiltrate","Bypass","Return","Defeat","Spy on","Bribe","Deliver","Escape","Imprison","Stop","Befriend","Pacify","Persuade","Steal","Escort","Banish","Free",];
+const detail2 = ["Goblet","Prisoner","Sword","Vault","Cult","Spirit","Killer","Demon","Noble","Hunter","Hostage","Thief","Spy","Werewolf","Relic","High priest","Merchant","Witch","Ritual","Vampire",];
+const detail3 = ["Of the evil wizard","Stalking the wastes","At the bottom of the river","In the city sewers","Under the barrow mounds","Of the fallen hero","In the magical library","In the king's court","Of the ancient lineage","In the sorcerer's tower","In the Murkwood","Hiding in the slums","Of the Dwarven lord","In the musty tomb","Of the royal knights","Sacrificing innocents","In the catacombs","Blackmailing the baron","In the Thieves' Guild","Murdering townsfolk",];
+function randomInt(n){
+return math.floor(math.random()*n);
+}
+function generateAdventure()
+</script>
+<h1>Share Your Favorite Names Below!</h1>
+<!-- Remarkbox - Your readers want to communicate with you -->
+<div id="remarkbox-div">
+  <noscript>
+    <iframe id=remarkbox-iframe src="https://my.remarkbox.com/embed?nojs=true" style="height:600px;width:100%;border:none!important" tabindex=0></iframe>
+  </noscript>
+</div>
+<script src="https://my.remarkbox.com/static/js/iframe-resizer/iframeResizer.min.js"></script>
+<script>
+  var rb_owner_key = "bb29b2d5-bc6e-11ee-9818-751976fc35b2";
+  var thread_uri = window.location.href;
+  var thread_title = window.document.title;
+  var thread_fragment = window.location.hash;
+  // rb owner was here.
+  var rb_src = "https://my.remarkbox.com/embed" + 
+      "?rb_owner_key=" + rb_owner_key +
+      "&thread_title=" + encodeURI(thread_title) +
+      "&thread_uri=" + encodeURIComponent(thread_uri) + 
+      thread_fragment;
+  function create_remarkbox_iframe() {
+    var ifrm = document.createElement("iframe");
+    ifrm.setAttribute("id", "remarkbox-iframe");
+    ifrm.setAttribute("scrolling", "no");
+    ifrm.setAttribute("src", rb_src);
+    ifrm.setAttribute("frameborder", "0");
+    ifrm.setAttribute("tabindex", "0");
+    ifrm.setAttribute("title", "Remarkbox");
+    ifrm.style.width = "100%";
+    document.getElementById("remarkbox-div").appendChild(ifrm);
+  }
+  create_remarkbox_iframe();
+  iFrameResize(
+    {
+      checkOrigin: ["https://my.remarkbox.com"],
+      inPageLinks: true,
+      initCallback: function(e) {e.iFrameResizer.moveToAnchor(thread_fragment)}
+    },
+    document.getElementById("remarkbox-iframe")
+  );
+</script>
+</body>
+</html>
