@@ -51,7 +51,7 @@ function randomConsonant() {
 function generateName() {
   let name = "";
   let length = randomInt(8) + 3;
-  let pattern = randomInt(3);
+  let pattern = randomInt(2);
   for (let i = 0; i < length; i++) {
     if (pattern === 0) {
       if (i % 2 === 0) {
@@ -64,12 +64,6 @@ function generateName() {
         name += randomVowel();
       } else {
         name += randomConsonant();
-      }
-    } else {
-      if (randomInt(2) === 0) {
-        name += randomConsonant();
-      } else {
-        name += randomVowel();
       }
     }
   }
