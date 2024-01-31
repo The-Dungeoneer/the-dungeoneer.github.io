@@ -35,14 +35,14 @@ p {
 <button id="generate">Generate</button>
 <p id="adventure"></p>
 <script>
-const detail1 = ["Rescue","Find","Destry","Infiltrate","Bypass","Return","Defeat","Spy on","Bribe","Deliver","Escape","Imprison","Stop","Befriend","Pacify","Persuade","Steal","Escort","Banish","Free",];
+const detail1 = ["Rescue","Find","Destroy","Infiltrate","Bypass","Return","Defeat","Spy on","Bribe","Deliver","Escape","Imprison","Stop","Befriend","Pacify","Persuade","Steal","Escort","Banish","Free",];
 const detail2 = ["Goblet","Prisoner","Sword","Vault","Cult","Spirit","Killer","Demon","Noble","Hunter","Hostage","Thief","Spy","Werewolf","Relic","High priest","Merchant","Witch","Ritual","Vampire",];
 const detail3 = ["Of the evil wizard","Stalking the wastes","At the bottom of the river","In the city sewers","Under the barrow mounds","Of the fallen hero","In the magical library","In the king's court","Of the ancient lineage","In the sorcerer's tower","In the Murkwood","Hiding in the slums","Of the Dwarven lord","In the musty tomb","Of the royal knights","Sacrificing innocents","In the catacombs","Blackmailing the baron","In the Thieves' Guild","Murdering townsfolk",];
 function randomInt(n){
-return math.floor(math.random()*n);
+return Math.floor(Math.random()*n);
 }
 function generateAdventure(){
-var adventure = `${detail1[randomInt(20)]} the ${detail1[randomInt(20)]} ${detail1[randomInt(20)]}`;
+var adventure = `${detail1[randomInt(20)]} the ${detail2[randomInt(20)]} ${detail3[randomInt(20)]}`;
 document.getElementById("adventure").innerText = adventure;
 }
 document.getElementById("generate").addEventListener("click", generateAdventure);
