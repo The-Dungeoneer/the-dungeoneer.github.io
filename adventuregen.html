@@ -31,9 +31,9 @@ p {
 <body>
 <a href="/"><img src="/logo.png"></a>
 <h1>Fantasy Name Generator</h1>
-<p>Click the button below to generate a random fantasy name.</p>
+<p>Click the button below to generate a random fantasy adventure.</p>
 <button id="generate">Generate</button>
-<p id="name"></p>
+<p id="adventure"></p>
 <script>
 const detail1 = ["Rescue","Find","Destry","Infiltrate","Bypass","Return","Defeat","Spy on","Bribe","Deliver","Escape","Imprison","Stop","Befriend","Pacify","Persuade","Steal","Escort","Banish","Free",];
 const detail2 = ["Goblet","Prisoner","Sword","Vault","Cult","Spirit","Killer","Demon","Noble","Hunter","Hostage","Thief","Spy","Werewolf","Relic","High priest","Merchant","Witch","Ritual","Vampire",];
@@ -41,7 +41,11 @@ const detail3 = ["Of the evil wizard","Stalking the wastes","At the bottom of th
 function randomInt(n){
 return math.floor(math.random()*n);
 }
-function generateAdventure()
+function generateAdventure(){
+var adventure = `${detail1[randomInt(20)]} the ${detail1[randomInt(20)]} ${detail1[randomInt(20)]}`;
+document.getElementById("adventure").innerText = adventure;
+}
+document.getElementById("generate").addEventListener("click", generateAdventure);
 </script>
 <h1>Share Your Favorite Names Below!</h1>
 <!-- Remarkbox - Your readers want to communicate with you -->
