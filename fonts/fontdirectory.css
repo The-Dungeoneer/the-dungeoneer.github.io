@@ -4,17 +4,17 @@
 } 
 @font-face { 
   font-family: "Goblin Hand"; 
-  src: url("/fonts/VTCGoblinHand.ttf"); 
+  src: url("/fonts/vtcgoblinhand/VTCGoblinHand.ttf"); 
 } 
 @font-face { 
   font-family: "Goblin Hand Bold"; 
-  src: url("/fonts/VTCGoblinHandBold.ttf"); 
+  src: url("/fonts/vtcgoblinhand/VTCGoblinHandBold.ttf"); 
 } 
 @font-face { 
   font-family: "Goblin Hand Italic"; 
-  src: url("/fonts/VTCGoblinHandItalic.ttf"); 
+  src: url("/fonts/vtcgoblinhand/VTCGoblinHandItalic.ttf"); 
 } 
 @font-face { 
   font-family: "Goblin Hand SC"; 
-  src: url("/fonts/VTCGoblinHandSC.ttf"); 
+  src: url("/fonts/vtcgoblinhand/VTCGoblinHandSC.ttf"); 
 } 
