@@ -1,4 +1,20 @@
 @font-face { 
   font-family: "Flinogast"; 
-  src: url("/Flinogast.ttf"); 
+  src: url("/fonts/Flinogast.ttf"); 
+} 
+@font-face { 
+  font-family: "Goblin Hand"; 
+  src: url("/fonts/VTCGoblinHand.ttf"); 
+} 
+@font-face { 
+  font-family: "Goblin Hand Bold"; 
+  src: url("/fonts/VTCGoblinHandBold.ttf"); 
+} 
+@font-face { 
+  font-family: "Goblin Hand Italic"; 
+  src: url("/fonts/VTCGoblinHandItalic.ttf"); 
+} 
+@font-face { 
+  font-family: "Goblin Hand SC"; 
+  src: url("/fonts/VTCGoblinHandSC.ttf"); 
 } 
