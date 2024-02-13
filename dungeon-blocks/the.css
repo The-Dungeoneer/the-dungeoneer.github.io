@@ -1,5 +1,4 @@
 .block-stack{
-  box-sizing: border-box;
   overflow: auto;
   background-color: grey;
 }
