@@ -1,6 +1,7 @@
 .block-stack{
   box-sizing: border-box;
   overflow: auto;
+  background-color: grey;
 }
 
 .block {
@@ -69,6 +70,10 @@
 .custom{
   background-color: #ff0f0f;
  }
+
+.grey{
+  background-color: lightgrey;
+}
 
 .comment{
   background-color: #ffff82;
