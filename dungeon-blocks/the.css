@@ -4,11 +4,11 @@
 }
 
 .block-stack::before{
-content: "End Dungeon Block Stack";
+content: "End Dungeon Block Stack\n";
 }
 
 .block-stack::after{
-content: "End Dungeon Block Stack";
+content: "\nEnd Dungeon Block Stack";
 }
 
 .block {
