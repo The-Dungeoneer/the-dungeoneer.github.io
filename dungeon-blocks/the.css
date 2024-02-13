@@ -1,6 +1,7 @@
 .block-stack{
   overflow: auto;
   background-color: grey;
+  padding:20px;
 }
 
 .block {
