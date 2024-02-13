@@ -2,6 +2,7 @@
   overflow: auto;
   background-color: lightgrey;
   padding:20px;
+  border: 1px solid black;
 }
 
 .block {
