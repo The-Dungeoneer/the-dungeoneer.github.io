@@ -3,14 +3,6 @@
   background-color: grey;
 }
 
-.block-stack::before{
-content: "End Dungeon Block Stack\n";
-}
-
-.block-stack::after{
-content: "\nEnd Dungeon Block Stack";
-}
-
 .block {
   display: inline-block; /* changed from inline-block */
   border-radius: 5px;
