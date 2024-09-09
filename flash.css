@@ -1,0 +1,11 @@
+/* I brought back an equivalent to the blink tag */
+@keyframes flash{
+	50% {opacity:0;}
+}
+flash {
+	animation: flash 1s step-start infinite;
+}
+/* created by Little_Jeffy_Joe. To use, just put this code*/
+/* in your css file. Once you link it, just type this tag: */
+/* <flash></flash>, and type anything you want between it. */
+/* It will flash infinitely. No freaking jokes */
