@@ -104,8 +104,9 @@
     transition: box-shadow 0.2s;
     pointer-events: all;
     overflow: hidden;
-  
-}monitor-value {
+}
+
+monitor-value {
     display: flex;
     justify-content: center;
     align-items: center;
