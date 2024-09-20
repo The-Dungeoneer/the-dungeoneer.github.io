@@ -1,4 +1,4 @@
-db-block-stack{
+dbblockstack {
 	overflow: auto;
   background-color: lightgrey;
   font-family: Arial, sans-serif;
@@ -7,7 +7,7 @@ db-block-stack{
   text-align:default;
 }
 
-db-block {
+dbblock {
   display: inline-block; /* changed from inline-block */
   border-radius: 5px;
   padding: 5px 10px;
@@ -83,7 +83,7 @@ db-block {
   color: black;
 }
 
-input {
+input{
   display: inline-block;
   border: 1px solid black;
   border-radius: 5px;
