@@ -42,7 +42,7 @@
 }
 
 .looks {
-  background-color: #9966ff;
+  background-color: #96f;
 }
 
 .sound {
@@ -58,7 +58,7 @@
 }
 
 .sensing {
-  background-color: #4cbfe6;
+  background-color: #5cb1d6;
 }
 
 .operators {
@@ -66,19 +66,26 @@
 }
 
 .variables {
-  background-color: #ee7d16;
+  background-color: ##ff8c1a;
+}
+
+.lists {
+  background-color: #ff661a;
 }
 
 .custom{
-  background-color: #ff0f0f;
+  --color: #ff6680;
+  background-color: var(--color);
  }
 
 .grey{
-  background-color: grey;
+  background-color: #bfbfbf;
+  border-color: #909090;
 }
 
 .comment{
-  background-color: #ffff82;
+  background-color: #ffffa5;
+  border-color: #d0d1d2;
   color: black;
 }
 
