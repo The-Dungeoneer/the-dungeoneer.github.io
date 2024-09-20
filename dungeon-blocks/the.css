@@ -1,7 +1,7 @@
 .block-stack{
   overflow: auto;
   background-color: lightgrey;
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   padding:20px;
   border: 1px solid black;
   text-align:default;
